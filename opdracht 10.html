@@ -1,0 +1,45 @@
+[11:05] Luuk Sterk
+    10:
+​[11:05] Luuk Sterk
+    
+
+<html>  
+    <body>
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <script src="./robot-arm.js"></script>
+        <script>
+// Robotarm bibliotheek inladen
+varcanvas= document.getElementById("canvas");
+varrobotArm=newRobotArm(canvas);
+
+// Het level inladen
+            robotArm.loadLevel("exercise 10");
+
+// Jou instructies volgen hier
+ 
+vargetal=9
+var GETAL =8
+ 
+for (j=1 ; j<=5 ; j++) {​​​​​​​​
+ 
+                    robotArm.grab();
+ 
+for (i=1 ; i<=getal ; i++) 
+                    robotArm.moveRight();
+
+                    robotArm.drop();
+ 
+for (i=1 ; i<= GETAL ; i++) 
+                    robotArm.moveLeft();
+
+ 
+getal= (getal-2)
+                    GETAL = (GETAL -2)
+            }​​​​​​​​
+ 
+// De door jou opgegeven instructies uitvoeren
+            robotArm.run();
+</script>
+    </body>
+</html>
+
